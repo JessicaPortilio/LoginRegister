@@ -1,0 +1,89 @@
+/* Define que a altura do HTML e do body (corpo da página) será 100% da tela */
+// Define que o HTML e o body ocupam 100% da altura da tela e remove as margens padrão. 
+html, body {
+    height: 100%; /* Faz o HTML e o body ocuparem toda a altura da tela */
+    margin: 0; /* Remove as margens padrão do navegador */
+}
+
+/* Centraliza o conteúdo na tela */
+// Centraliza o conteúdo na tela usando o layout flexbox.
+.center-content {
+    display: flex; /* Usa o layout flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100%; /* Faz o conteúdo ocupar 100% da altura da tela */
+}
+
+/* Estilo para o card (cartão) que contém o formulário */
+// Define o estilo do card que contém o formulário, com largura máxima e altura ajustável.
+.example-card {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    max-width: 400px; /* Define uma largura máxima para o card */
+    height: auto; /* A altura se ajusta automaticamente ao conteúdo */
+    display: flex; /* Usa o layout flexbox para organizar os itens internos */
+    flex-direction: column; /* Organiza os itens em coluna (um abaixo do outro) */
+}
+
+/* Estilo para o formulário dentro do card */
+// Define o estilo do formulário dentro do card, com largura mínima e máxima.
+.example-form {
+    min-width: 150px; /* Define uma largura mínima para o formulário */
+    max-width: 500px; /* Define uma largura máxima para o formulário */
+    width: 100%; /* Ocupa 100% da largura disponível */
+}
+
+/* Estilo para campos de formulário que ocupam toda a largura */
+// Define que os campos de formulário ocupam 100% da largura disponível e adiciona um espaçamento acima.
+.example-full-width {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    margin-top: 10px; /* Adiciona um espaçamento acima do campo */
+}
+
+/* Estilo para o conteúdo dentro das abas (tabs) */
+// Define o estilo do conteúdo dentro das abas, ocupando todo o espaço disponível e permitindo scroll se necessário.
+.tab-content {
+    flex: 1; /* Faz o conteúdo ocupar todo o espaço disponível na aba */
+    display: flex; /* Usa o layout flexbox para organizar os itens internos */
+    flex-direction: column; /* Organiza os itens em coluna (um abaixo do outro) */
+    padding: 5px; /* Adiciona um pequeno espaçamento interno */
+    overflow: auto; /* Adiciona scroll apenas se o conteúdo for maior que a altura disponível */
+}
+
+/* Estilo para o botão */
+// Define o estilo do botão, com largura total, texto branco e fundo na cor #AC1754.
+.mat-button {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    color: white; /* Define a cor do texto como branco */
+    background-color: #AC1754; /* Define a cor de fundo do botão */
+}
+
+/* Estilo para a mensagem de feedback */
+// Define o estilo básico para as mensagens de feedback, com espaçamento e alinhamento centralizado.
+feedback-message {
+    margin-top: 16px; /* Adiciona um espaçamento acima da mensagem */
+    text-align: center; /* Centraliza o texto da mensagem */
+}
+
+/* Estilo para mensagens de feedback de sucesso */
+// Define cores específicas para mensagens de sucesso (verde) e erro (vermelho).
+.feedback-message.success {
+    color: green; /* Define a cor do texto como verde */
+}
+
+/* Estilo para mensagens de feedback de erro */
+// Define cores específicas para mensagens e erro (vermelho).
+.feedback-message.error {
+    color: red; /* Define a cor do texto como vermelho */
+}
+
+/* Altera a cor primária do tema do Angular Material */
+// Altera a cor primária do tema do Angular Material para #AC1754.
+::ng-deep html {
+    --mat-sys-primary: #AC1754; /* Define a cor primária como #AC1754 */
+}
+
+// O layout é centralizado na tela, com um card de largura máxima de 400px.
+// Os campos de formulário ocupam toda a largura disponível.
+// O botão tem uma cor de fundo personalizada (#AC1754).
+// As mensagens de feedback são exibidas com cores diferentes para sucesso e erro.
+// A cor primária do tema do Angular Material é alterada para #AC1754.
